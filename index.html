@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Attach CSS -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- remix-icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-primaryColor fixed top-0 left-0 w-full z-50">
+      <nav class="container relative h-14 flex justify-between items-center">
+        <div>
+          <a href="#" class="text-2xl uppercase px-3 font-bold ml-2">
+            Bur<span class="text-secondaryColor">ger</span>
+          </a>
+        </div>
+
+        <div
+          id="navMenu"
+          class="hidden absolute top-0 left-0 w-full py-14 bg-primaryColor border-b border-secondaryColor md:block md:border-none md:static md:py-0 md:w-auto md:ml-auto text-xl"
+        >
+          <ul class="flex flex-col text-center gap-5 md:flex md:flex-row">
+            <li>
+              <a
+                href="#home"
+                class="class_link hover:text-secondaryColor ease-in duration-200"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="class_link hover:text-secondaryColor ease-in duration-200"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#menu"
+                class="class_link hover:text-secondaryColor ease-in duration-200"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="#review"
+                class="class_link hover:text-secondaryColor ease-in duration-200"
+                >Review</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="class_link hover:text-secondaryColor ease-in duration-200"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <div
+            id="close"
+            class="absolute md:hidden top-[0.7rem] right-4 text-2xl cursor-pointer"
+          >
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-5 md:px-4">
+          <i class="ri-moon-line cursor-pointer ml-4 text-xl"></i>
+          <div id="hamburger" class="md:hidden pr-4">
+            <i class="ri-menu-2-line cursor-pointer text-xl"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+      <div class="container flex flex-col items-center gap-10 md:flex-row">
+        <div class="mx-auto md:basis-1/2 lg:basis-2/5 md:ml-8 animate-movingY">
+          <img
+            src="./img/home-image.png"
+            alt="home page"
+            class="w-60 md:w-full"
+          />
+        </div>
+
+        <div class="text-center md:basis-1/2 lg:basis-3/5 md:text-start">
+          <h1 class="home_title">HAPPY TUMMY WITH TASTY BURGERS.</h1>
+
+          <div class="separator mx-auto md:mx-0"></div>
+          <p class="para px-2 md:px-0 md:pr-1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Praesentium perspiciatis ut quam voluptate distinctio ea, deserunt
+            corporis quo quisquam vero facilis! Minus eum cumque amet libero
+            iste, sequi quod accusamus.
+          </p>
+
+          <div
+            class="text-base flex items-center justify-center gap-4 py-10 md:justify-start md:gap-20"
+          >
+            <div class="text-center">
+              <i class="fa-solid fa-utensils text-4xl text-secondaryColor"></i>
+              <br />
+              Delicious
+            </div>
+            <div class="text-center">
+              <i class="fa-solid fa-droplet text-secondaryColor text-4xl"></i>
+              <br />
+              Fresh
+            </div>
+            <div class="text-center">
+              <i class="fa-brands fa-envira text-secondaryColor text-4xl"></i>
+              <br />
+              Organic
+            </div>
+          </div>
+
+          <div>
+            <a href="#" class="btn btn-primary">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
